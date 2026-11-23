@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tourism &amp; words — Vocabulary</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fff;--tx:#111;--mu:#777;--gr:#dcdcdc;--gr2:#ececec;--bk:#111;--fg:#fff;--bd:#cfcfcf;--ok:#eaf3ec;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--tx:#f0f0f0;--mu:#999;--gr:#2d2d2d;--gr2:#222;--bk:#f0f0f0;--fg:#111;--bd:#444;--ok:#1d2b22}}
+:root[data-theme="dark"]{--bg:#161616;--tx:#f0f0f0;--mu:#999;--gr:#2d2d2d;--gr2:#222;--bk:#f0f0f0;--fg:#111;--bd:#444;--ok:#1d2b22}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Jost,"Helvetica Neue",Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;gap:22px;padding:16px 0;font-size:13px}
+nav b{font-size:14px}nav a{color:var(--tx);text-decoration:none}
+nav .sp{flex:1}
+.q{width:min(240px,40vw);height:26px;border-radius:13px;border:0;background:var(--gr);padding:0 12px;font:inherit;font-size:12px;color:var(--tx)}
+.sq{width:22px;height:22px;border:0;background:var(--gr);color:var(--tx);cursor:pointer;font-size:12px;padding:0}
+.hero{position:relative;padding:48px 0 28px;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"a b""c c""d e"}
+.hero .bx{position:absolute;left:34%;top:18px;width:26%;height:230px;background:var(--gr)}
+.hero p{margin:0;font-size:13px;position:relative}
+.bg{font-size:clamp(54px,12vw,120px);font-weight:500;line-height:1;letter-spacing:-2px;position:relative;grid-column:1/3}
+.bg.r{text-align:right}
+.btn{display:inline-block;border:1px solid var(--bk);background:var(--bk);color:var(--fg);padding:11px 34px;font:inherit;font-size:12px;cursor:pointer;border-radius:0}
+.btn.o{background:transparent;color:var(--tx)}
+.intro{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;margin:30px 0 50px}
+.im{background:var(--gr)}
+.intro .im{min-height:150px}
+.intro p{font-size:13px;margin:0 0 20px}
+.st{display:flex;gap:44px;margin-top:18px}
+.st b{display:block;font-size:34px;font-weight:500;line-height:1}.st span{font-size:11px;color:var(--mu)}
+.bar{height:3px;background:var(--gr);margin-top:20px}.bar i{display:block;height:100%;background:var(--bk);width:0;transition:.3s}
+h2{font-size:18px;font-weight:500;margin:0}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--bk);background:transparent;color:var(--tx);border-radius:12px;padding:3px 12px;font:inherit;font-size:11px;cursor:pointer}
+.pill.on{background:var(--bk);color:var(--fg)}
+.cat{display:grid;grid-template-columns:150px 1fr;gap:26px;margin-bottom:50px}
+.fl{border:1px solid var(--tx);padding:12px;align-self:start;font-size:12px}
+.fl h4{margin:0 0 8px;font-weight:500;font-size:12px}.fl div{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px}.fl div:last-child{margin:0}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:11px;margin-bottom:12px}
+.top button{border:1px solid var(--tx);background:none;color:var(--tx);font:inherit;font-size:10px;padding:2px 8px;cursor:pointer}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cd{position:relative;border:1px solid var(--gr);padding:8px 8px 12px;cursor:pointer;background:var(--bg)}
+.cd .im{height:70px;margin-bottom:10px;padding:6px;display:flex;gap:4px;align-items:flex-start;flex-wrap:wrap}
+.tg{border:1px solid var(--tx);border-radius:10px;padding:0 8px;font-size:10px;background:var(--bg)}
+.cd b{display:block;font-weight:500;font-size:14px;padding-right:30px}
+.cd p{margin:3px 0 0;font-size:12px;color:var(--mu);min-height:34px}
+.hide .cd p:not(.show){filter:blur(6px)}
+.ck{position:absolute;right:8px;bottom:8px;width:26px;height:26px;border-radius:50%;border:1px solid var(--bk);background:transparent;color:transparent;cursor:pointer;font-size:12px;padding:0}
+.cd.d{background:var(--ok)}.cd.d .ck{background:var(--bk);color:var(--fg)}
+.promo{background:var(--gr2);display:flex;gap:20px;align-items:center;padding:14px;margin-bottom:40px}
+.promo .im{width:150px;height:80px;background:var(--gr);flex:none}
+.promo p{margin:0 0 10px;font-size:13px;flex:1}
+footer{background:#111;color:#fff;padding:30px 0;font-size:11px}
+footer .w{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
+footer h5{margin:0 0 8px;font-weight:500;font-size:11px}footer a{display:block;color:#fff;text-decoration:none;margin-bottom:5px}
+footer .lg{font-size:18px;margin-bottom:6px}
+@media(max-width:700px){.hero .bx{left:40%;width:30%;height:150px}.intro,.cat{grid-template-columns:1fr}.g{grid-template-columns:repeat(2,1fr)}nav a{display:none}.promo .im{display:none}footer .w{grid-template-columns:1fr}.st{gap:24px}}
+</style></head><body>
+<div class="w"><nav><b>Logo</b><a href="#st">Статистика</a><a href="#cat">Разделы</a><span class="sp"></span><input class="q" id="q" placeholder="Поиск слова…"><button class="sq" id="th" title="Тема">◐</button><button class="sq" id="br" title="Сбросить прогресс">↺</button></nav>
+<section class="hero"><div class="bx"></div>
+<p>Учим слова<br>вместе с туризмом</p><p style="text-align:right" id="hs"></p>
+<div class="bg">Tourism</div><div class="bg r">&amp; words</div>
+<p style="margin-top:28px"><a class="btn" href="#cat">Начать учить</a></p><p style="text-align:right;margin-top:28px">Международный туризм,<br>Appendix 4 · New Trends</p></section>
+<section class="intro" id="st"><div class="im"></div><div><p>Лексика из учебника International Tourism: выделенные в текстах выражения и словарь к каждому разделу. Отмечай выученное кружком — прогресс сохраняется.</p>
+<div class="st"><div><b id="n1"></b><span>слов и<br>выражений</span></div><div><b id="n2"></b><span>выучено</span></div><div><b id="n3"></b><span>разделов</span></div></div><div class="bar"><i id="p"></i></div></div></section>
+<section id="cat"><div class="hd"><h2>Разделы</h2><div class="pills" id="tabs"></div></div>
+<div class="cat"><aside class="fl"><h4>Тип</h4><div id="f1"></div><h4>Показывать</h4><div id="f2"></div><h4>Перевод</h4><div id="f3"></div></aside>
+<div><div class="top"><span id="cnt"></span><button id="bs">сначала: по порядку</button></div><div class="g" id="c"></div></div></div></section>
+<section class="promo"><div class="im"></div><p>Выучи все слова раздела — и вернись к ним с закрытым переводом.</p><a class="btn" href="#cat" id="pb">Повторить</a></section></div>
+<footer><div class="w"><div><div class="lg">Tourism &amp; words</div>Словарь по учебнику<br>International Tourism</div><div><h5>Меню</h5><a href="#st">О словаре</a><a href="#cat">Разделы</a></div><div><h5>Страницы</h5><a>351–373</a><a>Appendix 4</a></div></div></footer>
+<script>
+const D=[
+["Tourism as industry",
+`more individualistic activities|более индивидуальные виды досуга
+foreign holiday package tours|зарубежные пакетные туры
+safaris, spa resorts, deluxe hotels|сафари, спа-курорты, отели-люкс
+industry with the potencial to grow faster than the economy|отрасль, способная расти быстрее экономики
+create jobs|создавать рабочие места
+affiliates and subsidiaries|дочерние компании и филиалы
+operate hotels|управлять отелями
+offer package tours|предлагать пакетные туры
+travelers checks|дорожные чеки
+agencies for motel and car-rental reservations|агентства бронирования мотелей и аренды авто
+operate regular service on major international routes|выполнять регулярные рейсы на междунар. линиях
+perform charter flights|выполнять чартерные рейсы
+aircraft maintenance, repair, and refueling|обслуживание, ремонт и заправка самолётов`,
+`exploitation of leisure|организация отдыха
+affiliate|дочерняя компания
+subsidiary|филиал`],
+["Cook & транспорт",
+`conducted tours|туры с гидом
+run a special train|пустить специальный поезд
+publicly advertised excursion train|публично рекламируемый экскурсионный поезд
+provide passengers for the excursion trains|обеспечивать пассажирами экскурсионные поезда
+conduct personal tours|проводить индивидуальные туры
+agent for the sale of travel tickets|агент по продаже билетов
+expansion of guided tours into a travel company|превращение туров с гидом в турфирму
+impact of the motor vehicle|влияние автомобиля
+interstate highways|межштатные магистрали
+single nonstop network|единая непрерывная сеть`,
+`exploitation of leisure|организация отдыха
+affiliate|дочерняя компания
+subsidiary|филиал
+conducted tour|тур по маршруту в сопровождении гида
+temperance meeting|встреча членов общества трезвости
+conduct excursions|сопровождать, проводить экскурсии
+net result|конечный результат
+shrinking of travel time|сокращение времени в пути`],
+["Ecotourism",
+`latest trend in tourism|новейшая тенденция в туризме
+environmentally conscious travelers|экологически сознательные путешественники
+promotes environmentally responsible travel|поощряет экологически ответственные поездки
+limit group size|ограничивать размер группы
+donate a percentage of tour profits|жертвовать процент прибыли от туров
+adventure expeditions|приключенческие экспедиции
+trekking and river rafting|трекинг и сплав по рекам
+collecting fees|сбор платы
+support conservation and park maintenance|поддерживать охрану природы и содержание парков
+wildlife preserves|заповедники дикой природы
+popular destination|популярное направление
+established guidelines|установили правила
+indigenous communities participate fully|коренные общины полноценно участвуют
+materials fabricated from recycled trash|материалы из переработанного мусора
+profitable and sustainable development|прибыльное и устойчивое развитие
+limit energy consumption|ограничивать потребление энергии
+preserve the ecological balance|сохранять экологический баланс
+avoid corrupting local cultures|не портить местные культуры
+preservation of nature for tomorrow|сохранение природы для будущего
+carrying capacity of the destination|пропускная способность места назначения`,
+`sustainable|постоянный, непрекращаемый, защищённый
+rain forest|тропический лес
+rigorous|строгий
+collect fees|взимать плату
+revenue|доход, прибыль
+earmark|предназначать, ассигновать
+tourism revenues|доходы от туризма
+similar practices|подобная практика
+implement|внедрять, претворять в жизнь
+indigenous|местный, туземный, коренной
+interpretation|устный перевод
+ecolodge|эко-домик (по экостандартам)
+energy consumption|потребление электроэнергии
+recycled trash|переработанные мусорные отходы
+fringe part|периферийная, малозначимая зона
+carrying capacity|возможность приёма туристов без вреда для места`],
+["Farm holiday",
+`genuinely original alternative|по-настоящему оригинальная альтернатива
+rural regions|сельские районы
+their own relaxing charm|своё расслабляющее очарование
+unspoiled nature, wilderness|нетронутая природа, дикая местность
+horseback riding|верховая езда
+feeding domestic animals|кормление домашних животных
+biodynamic cultivation|биодинамическое земледелие
+environment-friendly orientation|экологическая направленность
+children accepted at reduced rates|дети принимаются со скидкой
+active outdoor holiday|активный отдых на свежем воздухе
+photography tours|фототуры
+bird watching tours|туры по наблюдению за птицами
+traditional handicraft exhibitions|выставки народных ремёсел
+option of living in cottages|возможность жить в коттеджах
+holiday villages|курортные деревни
+recreational activities|развлекательные занятия`,
+`manor|поместье
+cultivation|возделывание, обработка (почвы)
+diet|питание, стол, пища
+cross-country routes|маршруты по пересечённой местности`],
+["Business travel",
+`corporate travellers|корпоративные путешественники
+making their own bookings online|самостоятельное бронирование онлайн
+computer reservations company|компания компьютерного бронирования
+on average|в среднем
+up from 53 per cent a year ago|рост с 53% год назад
+take uncomplicated domestic trips|простые поездки внутри страны
+have increased by 200 per cent|выросли на 200%
+First and business-class passengers|пассажиры первого и бизнес-класса
+have been hit by higher fare increases|столкнулись с большим ростом цен
+fares rise|тарифы растут
+dropped respectively by|упали соответственно на
+published tariffs|опубликованные тарифы
+negotiating discounts|согласование скидок
+rocketed by around 17 per cent|подскочили примерно на 17%
+reward scheme|система вознаграждений
+booking its cheapest deals|бронирование самых дешёвых предложений
+earn points|зарабатывать баллы
+exchanged for rewards|обмениваются на награды
+accounted for 20 per cent|составили 20%`,
+`online|в интерактивном режиме
+reservations|бронирование
+internet self-booking tool|механизм самостоятельного заказа билетов через интернет
+gap|большая разница
+staff|штат, персонал
+fare|пассажирский билет, стоимость проезда
+counterpart|компаньон, партнёр
+respectively|соответственно
+business cabin fares|стоимость проезда в бизнес-классе
+available|доступный, имеющийся в наличии
+bulk business|большой заказ
+negotiate discounts|договариваться о скидках
+overall|в целом, в основном
+premium fares|поощрительный тариф
+rocket|взлетать, резко увеличиваться
+rewards|льготы, скидки, вознаграждение
+low fares|низкие тарифы
+reward scheme|схема предоставления скидок
+book|приобретать билеты, покупать
+negotiate discounts in return for frequency of travel|скидки в обмен на частоту рейсов
+earn points|зарабатывать очки (баллы)
+account for|составлять
+business travel bookings|приобретение билетов бизнес-класса`],
+["Package holiday",
+`popularised the all-inclusive resort holiday|популяризировал отдых «всё включено»
+upgrade its resorts|модернизировать курорты
+unprecedented levels of comfort|беспрецедентный уровень комфорта
+incompatible with the new upmarket image|несовместимы с новым элитным имиджем
+growth of the low-cost airline industry|рост лоукостеров
+making independent travel easier|упрощение самостоятельных путешествий
+higher degree of personal attention|больше личного внимания
+super-deluxe boutique hotels|бутик-отели высшего класса
+room service, spa treatments|обслуживание в номерах, спа-процедуры
+luxury services|услуги класса люкс`,
+`package holiday|организованный тур с комплексным обслуживанием
+leisure group|объединение турфирм, специализирующихся на комплексном отдыхе
+all-inclusive resort holiday|комплексная поездка на курорт
+upgrade|модернизировать
+incompatible|несовместимый
+tour operator|тур-оператор, организатор турпоездок
+appeal of the holiday village model|привлекательность модели курортной деревни
+super-deluxe boutique hotel|небольшой отель наивысшего разряда
+spa treatments|лечение на водах
+package operator|организатор туров с комплексным обслуживанием`],
+["Industry rethinking",
+`cut its fleet by a third|сократить флот на треть
+going up-market|выход на более высокий уровень
+open super-deluxe hotels|открывать супероскошные отели
+rise of the internet|рост интернета
+traditional tour operators|традиционные тур-операторы
+booked through package tour companies|заказаны через турфирмы
+fixed costs|постоянные расходы
+luxury hotel business|бизнес отелей-люкс
+vulnerable to a travel downturn|уязвим к спаду в путешествиях
+provide a service to the affluent|обслуживать состоятельных
+remain in the middle market|остаться в среднем сегменте
+moved away from standard packages|отошли от стандартных пакетов
+adventure breaks and exotic destinations|приключенческие туры, экзотика
+stay a step ahead|быть на шаг впереди
+today's exotic holiday is tomorrow's mass destination|экзотика сегодня — массовый туризм завтра
+profit margins|размер прибыли`,
+`go up-market|преуспевать, быть высокодоходным бизнесом
+resort|курорт
+low-cost|низкозатратный, экономичный
+fixed costs|фиксированные цены
+luxury hotel|отель-люкс
+vulnerable|уязвимый, незащищённый
+travel downturn|сокращение перевозок
+(the) affluent|богачи
+mass destination|популярные (туристические) направления
+profit margin|размер прибыли`],
+["Online travel",
+`sales tool|инструмент продаж
+booking travel on the internet|бронирование через интернет
+undermined confidence in international travel|подорвали доверие к международным поездкам
+weathered such dramatic conditions|пережили такие драматичные условия
+traditional holiday companies|традиционные туркомпании
+build their own holidays|самим собирать свой отпуск
+online intermediaries|онлайн-посредники
+distributing unsold seats or rooms|распространять непроданные места и номера
+assemble the component parts of their holiday|собирать составные части отпуска
+be at risk|быть под угрозой
+low-cost airlines have sophisticated online sales operations|у лоукостеров сложные онлайн-продажи
+sell flights directly to customers|продавать рейсы напрямую
+on their behalf|от их имени
+highest-margin businesses|самые маржинальные виды бизнеса
+receive a commission|получать комиссионные
+greater volume of sales|больший объём продаж
+seller of the cheapest cruises|продавец самых дешёвых круизов
+their business model|их бизнес-модель
+take advantage of the shift towards internet bookings|воспользоваться сдвигом к онлайн-бронированию
+new travel-related products|новые продукты, связанные с туризмом`,
+`tool|инструмент
+overly|слишком, чрезмерно
+undermined confidence|подорвать доверие
+weather|пережить
+online intermediaries|посредники при интерактивных продажах
+sophisticate|усложнить
+disrupt|разорвать, прервать
+supply chain|цепочка снабжения
+increased demand|повышенный спрос
+online sales operations|интерактивные продажи
+highest-margin business|высокоприбыльный бизнес
+receive a commission|получать комиссионные
+rebating|возврат переплаты (за услуги или товары)
+hotelier|хозяин гостиницы
+travel-related|связанный с туризмом`],
+["Economic results",
+`earnings from international tourism exceeded|доходы от междунар. туризма превысили
+lower growth rate|более низкие темпы роста
+resulted in five million fewer foreign tourists|привело к сокращению на 5 млн иностр. туристов
+majority of the world's destinations|большинство направлений мира
+most popular destination|самое популярное направление
+reported a difficult year|сообщили о трудном годе
+declines in overseas arrivals|снижение зарубежных прибытий
+projected a 5% decline|прогнозировали падение на 5%
+introduce new luxury tourist trains|ввести новые туристические поезда-люкс
+surged by 9%|подскочил на 9%
+half of global receipts|половина мировых поступлений
+most popular pastime|самое популярное времяпрепровождение
+recorded 4% more tourist nights|зафиксировали на 4% больше ночёвок
+experienced a good tourist season|пережили хороший сезон
+affect tourism|влиять на туризм
+among the fastest developing sectors|среди самых быстро растущих отраслей
+favoured outbound travel|способствовал выездному туризму
+accounted for 10% of all jobs|составил 10% всех рабочих мест
+powerhouse of international tourism|мощный двигатель международного туризма
+spectacular recovery|впечатляющее восстановление
+climbed out of recession|выбралась из рецессии
+headed for a turndown in arrivals|шёл к спаду прибытий
+master plan to relaunch tourism|генплан возрождения туризма
+hit sharply by the impact of fundamentalist violence|сильно пострадал от фундаменталистского насилия
+conservation-oriented tourism|туризм, ориентированный на охрану природы
+steady growth|стабильный рост
+economized by combining trips|экономили, объединяя поездки
+youth market was squeezed|молодёжный рынок сократился
+continued to prosper|продолжали процветать
+cut prices by 6%|снизили цены на 6%
+predicted a market growth of 5%|прогнозировали рост рынка на 5%
+regionally|в региональном плане
+nation's second highest earner of foreign exchange|вторая по величине статья валютных доходов страны
+secured a position|закрепила позицию
+surge in arrivals|резкий рост прибытий
+surge in hotel reservations|резкий рост бронирований в отелях`,
+`earnings from international tourism|доходы от международного туризма
+exceed|превышать
+growth rate|темпы роста
+experience upward trend|иметь тенденцию роста
+hotel occupancy was down to ...%|заселение отелей снизилось до ...%
+decline|снижение, уменьшение, упадок
+respectively|соответственно
+project|прогнозировать
+overseas travel|международные поездки
+luxury tourist train|туристический поезд-люкс
+surge|подниматься
+affect|влиять, оказывать влияние
+outbound travel from|международные поездки из
+account for ...%|составлять ...%
+spectacular recovery in tourism to|значительное оживление туризма в ...
+climb out of recession|выкарабкаться из кризиса
+relaunch tourism|возродить туризм
+conservation|сохранение природы
+trade down|снизить цены (напр., с 5* на 4* отель)
+negotiate discounts|договариваться о скидках
+tailor to|приспособить к
+straitened financial circumstances|стеснённые (затруднённые) финансовые обстоятельства
+in anticipation of a higher volume|в ожидании увеличения объёма (перевозок)
+predict|предсказывать, прогнозировать
+become the second highest earner of foreign exchange|занять второе место по сумме заработанной валюты
+secure a position|обеспечить положение
+posted a 7% growth|заявить о 7% росте
+visitors in accommodation|проживающие в гостиницах`]];
+
+let cur=0,tp=0,only=0,hide=0,shuf=0,q='',K={};
+try{K=JSON.parse(localStorage.getItem('vk')||'{}')}catch(e){}
+const $=i=>document.getElementById(i),sv=()=>{try{localStorage.setItem('vk',JSON.stringify(K))}catch(e){}};
+const P=s=>s.split('\n').map(l=>l.split('|'));
+const A=[];D.forEach((d,s)=>[1,2].forEach(t=>P(d[t]).forEach(w=>A.push({s,t,e:w[0],r:w[1],k:''+s+t+w[0]}))));
+const opt=(id,arr,v,f)=>{$(id).innerHTML=arr.map((x,i)=>`<button class="pill ${i==v?'on':''}" data-i="${i}">${x}</button>`).join('');$(id).onclick=e=>{const b=e.target.closest('button');if(b){f(+b.dataset.i);render()}}};
+function render(){
+const dn=A.filter(w=>K[w.k]).length;
+$('n1').textContent=A.length;$('n2').textContent=dn;$('n3').textContent=D.length;$('hs').innerHTML=`${A.length} слов<br>${D.length} разделов`;$('p').style.width=100*dn/A.length+'%';
+$('tabs').innerHTML=D.map((d,i)=>`<button class="pill ${i==cur&&!q?'on':''}" data-i="${i}">${d[0]}</button>`).join('');
+$('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=+b.dataset.i;q='';$('q').value='';render()}};
+opt('f1',['Все','В тексте','Словарь'],tp,v=>tp=v);opt('f2',['Все','Невыученные'],only,v=>only=v);opt('f3',['Виден','Скрыт'],hide,v=>hide=v);
+let L=A.filter(w=>q?(w.e+' '+w.r).toLowerCase().includes(q):w.s==cur).filter(w=>!tp||w.t==tp).filter(w=>!only||!K[w.k]);
+if(shuf)L=L.sort(()=>Math.random()-.5);
+$('cnt').textContent='Найдено результатов: '+L.length;$('bs').textContent='порядок: '+(shuf?'случайный':'по книге');
+$('c').className='g'+(hide?' hide':'');
+$('c').innerHTML=L.map(w=>`<div class="cd ${K[w.k]?'d':''}" data-k="${w.k.replace(/"/g,'&quot;')}"><div class="im"><span class="tg">${w.t==1?'в тексте':'словарь'}</span>${q?`<span class="tg">${D[w.s][0]}</span>`:''}</div><b>${w.e}</b><p>${w.r}</p><button class="ck">✓</button></div>`).join('')}
+$('c').onclick=e=>{const c=e.target.closest('.cd');if(!c)return;
+if(e.target.closest('.ck')||!hide){const k=c.dataset.k;K[k]?delete K[k]:K[k]=1;sv();render()}else c.querySelector('p').classList.toggle('show')};
+$('q').oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
+$('bs').onclick=()=>{shuf=!shuf;render()};
+$('pb').onclick=()=>{hide=1;only=1;render()};
+$('th').onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim()=='#161616';r.dataset.theme=d?'light':'dark'};
+$('br').onclick=()=>{if(confirm('Сбросить прогресс?')){K={};sv();render()}};
+render();
+</script></body></html>
